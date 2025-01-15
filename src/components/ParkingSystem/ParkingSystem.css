@@ -1,0 +1,289 @@
+
+
+
+
+/* ParkingSystem.css */
+.container {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .parking-slot {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .parking-slot.available {
+    background-color: #dcfce7;
+    border-color: #86efac;
+  }
+  
+  .parking-slot.available:hover {
+    background-color: #bbf7d0;
+  }
+  
+  .parking-slot.occupied {
+    background-color: #fee2e2;
+    border-color: #fca5a5;
+    cursor: not-allowed;
+  }
+  
+  .legend {
+    margin-top: 1rem;
+  }
+  
+  .legend-item {
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .legend-box {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid;
+    margin-right: 0.5rem;
+    display: inline-block;
+  }
+  
+  .legend-box.available {
+    background-color: #dcfce7;
+    border-color: #86efac;
+  }
+  
+  .legend-box.occupied {
+    background-color: #fee2e2;
+    border-color: #fca5a5;
+  }
+  
+  .form {
+    max-width: 28rem;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.375rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+  }
+  
+  .button-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .button-outline {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    color: #374151;
+  }
+  
+  .button-outline:hover {
+    background-color: #f9fafb;
+  }
+  
+  .payment-details {
+    margin-bottom: 1rem;
+  }
+  
+  .amount {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .booking-form-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .booking-title {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .booking-subtitle {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+  }
+  
+  .form-input:focus {
+    border-color: #1a237e;
+    box-shadow: 0 0 0 4px rgba(26, 35, 126, 0.1);
+    outline: none;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .input-icon {
+    position: absolute;
+    right: 1rem;
+    top: 2.5rem;
+    color: #666;
+    transition: color 0.3s ease;
+  }
+  
+  .form-group:focus-within .input-icon {
+    color: #1a237e;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, #1a237e 0%, #3949ab 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 35, 126, 0.2);
+  }
+  
+  .submit-button:active {
+    transform: translateY(0);
+  }
+  
+  .success-message {
+    text-align: center;
+    color: #4caf50;
+    padding: 1rem;
+    border-radius: 12px;
+    background: rgba(76, 175, 80, 0.1);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Animation keyframes */
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.5s ease forwards;
+  }
